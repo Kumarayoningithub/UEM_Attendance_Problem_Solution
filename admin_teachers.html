@@ -1,0 +1,87 @@
+<!-- Admin - Manage Teachers -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Teachers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #3498db;
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            margin: 50px auto;
+            width: 400px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            color: black;
+        }
+
+        input,
+        select {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        button {
+            width: 95%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #2980b9;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1f6690;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Manage Teachers</h2>
+        <input type="text" id="teacherName" placeholder="Teacher Name">
+        <select id="stream">
+            <option value="CSE">CSE</option>
+            <option value="CSE(IoT)">CSE (IoT)</option>
+            <option value="CSE(AIML)">CSE (AIML)</option>
+            <option value="CST">CST</option>
+            <option value="CSIT">CSIT</option>
+            <option value="ECE">ECE</option>
+            <option value="Bio-Tech">Bio-Tech</option>
+            <option value="MECH">MECH</option>
+            <option value="EE">EE</option>
+            <option value="CIVIL">CIVIL</option>
+            <option value="MCA">MCA</option>
+            <option value="BCA">BCA</option>
+            <option value="LAW">LAW</option>
+        </select>
+        <input type="text" id="teacherID" placeholder="Teacher ID">
+        <button onclick="addTeacher()">Add Teacher</button>
+        <button onclick="goBack()">Back</button>
+    </div>
+
+    <script>
+        function addTeacher() {
+            alert('Teacher added successfully!');
+        }
+        function goBack() {
+            window.location.href = 'admin_panel.html';
+        }
+    </script>
+</body>
+
+</html>
