@@ -1,6 +1,5 @@
 // Firebase Configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyDBwp0RUlR3S_qGwzc4lbQUQWFqYjuBuDc",
     authDomain: "attendancemonitoring-abd09.firebaseapp.com",
     projectId: "attendancemonitoring-abd09",
     storageBucket: "attendancemonitoring-abd09.firebasestorage.app",
